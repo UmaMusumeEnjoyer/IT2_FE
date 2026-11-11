@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .doc-highlight {
+    @apply bg-amber-200 text-amber-950 px-1 py-0.5 rounded font-semibold transition-all duration-300;
+  }
+  .doc-highlight-active {
+    @apply ring-2 ring-amber-500 bg-amber-300;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f3ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4c5d7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #747686;
+}

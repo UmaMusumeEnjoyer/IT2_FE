@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: it2-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    networks:
+      - it2-network
+
+networks:
+  it2-network:
+    external: true
