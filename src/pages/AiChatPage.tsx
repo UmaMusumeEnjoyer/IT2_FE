@@ -35,7 +35,7 @@ export const AiChatPage: React.FC = () => {
         {
           sender: 'ai',
           text: data.answer,
-          citations: data.citations,
+          citations: data.sources,
         },
       ]);
     },

@@ -49,12 +49,13 @@ export interface Citation {
   documentTitle: string;
   clause: string;
   excerpt: string;
+  pageNumber?: number;
   pdfUrl: string;
 }
 
 export interface ChatResponse {
   answer: string;
-  citations: Citation[];
+  sources: Citation[];
   suggestions: string[];
 }
 
